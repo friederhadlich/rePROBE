@@ -1,0 +1,28 @@
+---
+title: "rePROBE"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Overview
+
+Revised probe assignment and updated probe-set annotation in microarrays
+
+
+## Installation
+
+To install from GitHub:
+```R
+# install.packages("devtools")
+devtools::install_github("friederhadlich/rePROBE")
+```
+
+## Usage
+
+1. Prepare your microarray definition, genomic information and annotations using `ARG_LIST <- prepare_data()` to return a list of rePROBE arguments (ARG_LIST).
+2. Perform the rePROBE - analysis using `run(ARG_LIST)`, which generates an appropiate environment object for the use with R packages i.e. [oligo](https://www.bioconductor.org/packages/release/bioc/html/oligo.html) or [affy](https://www.bioconductor.org/packages/3.8/bioc/html/affy.html).
+3. Show a summarizing report using function `show_report(ARG_LIST)`.
+
