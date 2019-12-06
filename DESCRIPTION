@@ -1,0 +1,26 @@
+Package: rePROBE
+Type: Package
+Title: Revised probe assignment and updated probe-set annotation in microarrays
+Version: 1.0.1
+Date: 2019-12-06
+Author: Frieder Hadlich <hadlich@fbn-dummerstorf.de>
+Maintainer: Frieder Hadlich <hadlich@fbn-dummerstorf.de>
+Description: This package creates a revised probe assignment and updated probe-set annotation for microarrays.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    curl,
+    data.table,
+    fs,
+    Rbowtie,
+    Rcpp,
+    R.utils,
+    dplyr,
+    multidplyr (>= 0.0.0.9000),
+    magrittr,
+    rlang
+Suggests: tcltk
+LinkingTo: Rcpp
+RoxygenNote: 7.0.2
+Depends: R (>= 3.5.0)
